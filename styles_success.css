@@ -15,7 +15,10 @@
     font-size: 25px;
 
     color: rgb(134, 192, 134);
+
+    line-height: 150%;
 }
+
 
 .zoom_div{
     height: 200px;
