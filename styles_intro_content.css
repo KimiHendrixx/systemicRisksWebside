@@ -1,0 +1,235 @@
+/* SET BASIC VALUES AND ASIGN THEM TO A VAR */
+:root {
+    --text-color-dark: rgb(31, 31, 31);
+    --navbar-height: 80px;
+    --navbar-bg: rgb(31, 31, 31);    
+    --navbar-hover-color: rgb(51, 145, 145);
+    --text-color-light: #fff8e6;
+    --side_margin: 150px;
+    --hover-color: rgb(183, 234, 189);
+    --border-link: rgb(134, 192, 134);
+}
+
+
+/* HEADLINE AND HEADLINE IMAGE */
+
+.headline_intro {
+    width: 100%;
+
+
+    font-family: 'Bebas Neue';
+    position: absolute;
+    
+
+    font-size: 6vw;
+    color: var(--navbar-bg);
+    text-shadow: 3px 3px 6px rgb(255, 255, 255);
+
+    text-align: center;
+
+}
+
+.headline_div {
+    height: auto;
+    display: flex;
+    font-family: 'Bebas Neue';
+
+    text-align: center;
+
+    align-items: center;
+}
+
+
+
+.hr_intro{
+    width: 60vw;
+    height: 2.5px;
+    margin-left: 20vw;
+
+    background-color: rgb(31, 31, 31);
+
+    border: none;
+
+}
+
+
+.headline_image {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    opacity: 0.6;
+}
+
+
+/* HEADLINE IMAGES INTRO */
+
+#headline_image_climate{
+    background-image: url(images/klimawandel.jpg);
+}
+
+
+#headline_image_pandemic{
+    background-image: url(images/pandemien.jpg);
+}
+
+#headline_image_ai{
+    background-image: url(images/ki.jpg);
+
+}
+
+#headline_image_war{
+    background-image: url(images/krieg.jpg);
+
+}
+
+#headline_image_eco{
+    background-image: url(images/wk.jpg);
+
+}
+
+
+
+/* TEXT */
+
+.text_intro{
+    width: 60vw;
+
+    font-size: 16px;
+
+    padding: 50px 100px 50px 100px;
+
+    margin: 0 20vw 0 20vw;
+
+    background-color: rgb(255, 255, 255);
+
+    color: var(--text-color-dark);
+
+    line-height: 160%;
+
+    text-align: justify;
+}
+
+
+/* HEADLINES */
+
+
+.intext_hl{
+    margin: 30px 20vw 10px 20vw;
+}
+
+#headline_intro_long{
+    font-size: 5vw;
+
+}
+
+/* LITERATURE */
+
+
+.lit_intro_div{
+    width: 60vw;
+
+    padding: 50px 100px 50px 100px;
+
+    margin: 0 20vw 0 20vw;
+
+    background-color: rgb(31, 31, 31);
+
+    color: rgb(255, 255, 255);
+}
+
+
+.headline_lit{
+    font-size: 50px;
+
+    color: rgb(255, 255, 255);
+
+    margin: none;
+    padding: none;
+
+}
+
+.hr_lit{
+    height: 1px;
+
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+
+    margin: none;
+    padding: none;
+
+
+}
+
+.text_lit a{
+    font-size: 17px;
+    color: rgb(217, 255, 255);
+}
+
+
+
+
+/* HEADLINE IMAGES CONTENT PANDEMIEN*/
+
+#landuse{
+    background-image: url(./content_pages_pandemic/images_pandemic/Biodiversitätsverlust.jpg);
+
+}
+
+#wildlife{
+    background-image: url(./content_pages_pandemic/images_pandemic/wildtierhandel.jpeg);
+}
+
+
+/* HEADLINE IMAGES CONTENT CLIMATE */
+#kerosin{
+    background-image: url(./content_pages_climate/images_climate/green\ kerosin.jpg);
+}
+
+#mbr{
+    background-image: url(./content_pages_climate/images_climate/biomass.jpg);
+
+}
+
+#mcb{
+    background-image: url(./content_pages_climate/images_climate/clouds.jpg);
+
+}
+
+#moore{
+    background-image: url(./content_pages_climate/images_climate/moore.jpg);
+
+}
+
+#plants{
+    background-image: url(./content_pages_climate/images_climate/climate\ plants.jpg);
+
+}
+
+#power{
+    background-image: url(./content_pages_climate/images_climate/p2x.jpg);
+
+}
+
+#alltag{
+    background-image: url(./content_pages_climate/images_climate/alltag.jpg);
+
+}
+
+#cities{
+    background-image: url(./content_pages_climate/images_climate/city.jpg);
+
+}
+
+#perm{
+    background-image: url(./content_pages_climate/images_climate/perm.jpg);
+
+}
+

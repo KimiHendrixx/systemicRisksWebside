@@ -1,0 +1,747 @@
+/* SET BASIC VALUES AND ASIGN THEM TO A VAR */
+:root {
+    --text-color-dark: rgb(31, 31, 31);
+    --navbar-height: 80px;
+    --navbar-bg: rgb(31, 31, 31);    
+    --navbar-hover-color: rgb(51, 145, 145);
+    --text-color-light: #fff8e6;
+    --side_margin: 150px;
+    --hover-color: rgb(183, 234, 189);
+    --border-link: rgb(134, 192, 134);
+}
+
+
+/* STANDART FORMATING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+a{
+    font-style: none;
+
+}
+
+
+
+h1{
+    font-family: 'Bebas Neue';
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-image: url("images/background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p{
+    line-height: 160%;
+}
+
+/* HR */
+.hr_gray{
+    width: 30vw;
+    height: 1.5px;
+
+    background-color: rgb(31, 31, 31);
+
+    border: none;
+}
+
+.flex_div {
+    display: flex;
+
+    width: 100%;
+}
+
+
+/* NO MARGIN */
+
+
+
+
+/* HEADER WITH LOGO AND NAVBAR */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--navbar-bg);
+    padding: 0px 2% 0px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 400px;
+}
+
+/* PARENT_UL IS VISIBLE NAVBAR IN HEADER */
+header .parent_ul {
+    list-style: none;
+}
+
+header .parent_ul li {
+    width: 225px;
+
+    position: relative;
+    float: left;
+
+    text-align: center;
+}
+
+#li_about{
+    width: 100px;
+}
+
+header .parent_ul li a {
+    font-style: none;
+    font-size: 17px;
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+header .parent_ul a:hover {
+    background: var(--hover-color);
+    color: var(--navbar-bg);
+}
+
+
+
+/* DROPDOWN NAV */
+
+header .dropdown_ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    width: fit-content;
+    background: rgb(88, 88, 88);
+    list-style: none;
+}
+
+header .dropdown_ul li {
+    width: 100%;
+    border-top: 1px solid rgb(31, 31, 31);
+}
+
+header .dropdown_ul li:hover {
+    background: gray;
+    width: 100%;
+}
+
+/* DROPDOWN APPEARS WHEN HOVER OVER LI */
+
+header .parent_ul li:focus-within>ul,
+header .parent_ul li:hover>ul {
+    display: inherit;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+
+/* RESPONSIVE ELEMENT */
+
+@media(max-width:1800px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(31, 31, 31);
+        border-top: 3px solid rgb(31, 31, 31);
+        display: none;
+    }
+
+    header .parent_ul li {
+        width: 100%;
+    }
+
+    #li_about{
+        width: 100%;
+    }
+
+    header .dropdown_ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .dropdown_ul li {
+        background: rgb(109, 109, 109);
+
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+
+}
+
+
+
+/* ABOUT FOOTER DARK*/
+
+#flex_about{
+    width: 100%;
+    height: fit-content;
+    
+    background-color: var(--navbar-bg);
+    align-items:flex-start;
+
+    padding-bottom: 50px;
+
+
+}
+
+.div_about_left{
+    width: 40vw;
+
+    margin: 50px 0 0 18vw;
+}
+
+
+.div_about_right{
+    width: 30vw;
+
+    margin: 50px 0 0 0;
+    
+}
+
+#hl_invis{
+    opacity: 0;
+    font-size: 40px;
+}
+
+
+
+.subheadline_about{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+
+    font-family: 'Bebas Neue'
+}
+
+
+.headline_about{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0;
+
+    font-family: 'Bebas Neue'
+}
+
+
+.text_white{
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+
+    width: 30vw;
+
+    line-height: 200%;
+}
+
+/* FOOTER ABOUT LIGHT */
+#flex_about_light{
+    width: 100%;
+    height: fit-content;
+    
+    background-image: url(images/yellow_texture.jpg);
+    align-items:flex-start;
+
+    padding-bottom: 50px;
+
+
+}
+
+#hl_invis{
+    opacity: 0;
+    font-size: 40px;
+}
+
+.subheadline_about_light{
+    color: var(--navbar-bg);
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+
+    font-family: 'Bebas Neue'
+}
+
+
+.headline_about_light{
+    color: var(--navbar-bg);
+    font-size: 40px;
+    margin: 0;
+
+    font-family: 'Bebas Neue'
+}
+
+
+.text_dark {
+    text-align: justify;
+    font-size: 15px;
+
+    width: 30vw;
+
+    line-height: 200%;
+}
+
+
+/* LITERATURE */
+
+
+.lit_small_content{
+    width: 40vw;
+
+    padding: 50px 100px 10px 100px;
+
+    margin: 0 30vw 0 30vw;
+
+    background-color: rgb(31, 31, 31);
+
+    color: rgb(255, 255, 255);
+}
+
+
+.headline_lit{
+    font-size: 50px;
+
+    color: rgb(255, 255, 255);
+
+    margin: none;
+    padding: none;
+
+}
+
+.hr_lit{
+    height: 1px;
+
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+
+    margin: none;
+    padding: none;
+
+
+}
+
+.text_lit a{
+    font-size: 17px;
+    color: rgb(217, 255, 255);
+}
+
+
+
+
+
+
+/* HEADLINE */
+.headline_index {
+    width: 100%;
+
+
+    font-family: 'Bebas Neue';
+    position: absolute;
+    
+    margin-top: 15vw;
+    font-size: 10vw;
+    color: var(--navbar-bg);
+    text-shadow: 3px 3px 6px rgb(255, 255, 255);
+
+    text-align: center;
+    
+    padding: none;
+}
+
+.headline_div {
+    height: auto;
+
+    font-family: 'Bebas Neue';
+
+    text-align: center;
+
+    position: relative;
+
+    background: url(images/blue_texture.jpg);
+}
+
+.headline_image_index {
+    position: relative;
+    width: 100vw;
+    height: 40vw;
+
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+
+.hr_index{
+    position: absolute;
+    width: 60vw;
+    height: 2.5px;
+    margin-left: 20vw;
+
+    background-color: rgb(31, 31, 31);
+
+    border: none;
+
+}
+
+.text_intro{
+    width: 100%;
+
+    text-align: center;
+
+    padding: 100px 20vw 0 20vw;
+
+}
+
+.text_intro p{
+    background-color: #f0f0f0;
+
+    padding: 30px;
+}
+
+/* BODY */
+
+
+#systemrisiken_überschrift_box {
+    margin: 1=00px;
+
+
+}
+
+#systemrisiken_überschrift {
+    text-align: center;
+    font-size: 3vw;
+
+    margin: 100px 0;
+}
+
+.container {
+    position: relative;
+    height: 700px;
+    width: 100%;
+
+}
+
+.container_round {
+    position: relative;
+    height: 50vw;
+    width: 100%;
+
+    margin-bottom: 200px;
+
+}
+
+.round_image {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 600px;
+
+
+}
+
+.round_text_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.headline_round{
+    font-size: 3vw;
+}
+
+p {
+    text-align: justify;
+}
+
+#title {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+#intro {
+    text-align: justify;
+    margin: 0px 400px 0px 400px;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+
+/* SYSTEMRISIKEN - WAS IST DAS? */
+
+#arrow_start {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    margin-left: 57vw;
+    top: 0px;
+}
+
+
+#systemrisiken_box {
+    width: 40vw;
+    height: 40vw;
+    background: url(images/azure_texture.jpg);
+    background-size: 1000px;
+    margin-left: 15vw;
+    border-radius: 600px;
+    margin-top: 50px;
+}
+
+#systemrisiken_text {
+    width: 30vw;
+}
+
+
+
+/* KLIMAWANDEL */
+
+
+#klimawandel_image {
+    position: absolute;
+    right: 50vw;
+    margin-top: 50px;
+}
+
+#klimawandel_box {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background: url(images/yellow_texture.jpg);
+    background-size: 1000px;
+
+    right: var(--side_margin);
+    margin-top: 100px;
+
+    border-radius: 600px;
+}
+
+#klimawandel_text {
+    width: 500px;
+
+    padding: 30px;
+}
+
+
+
+
+/* PANDEMIEN */
+
+#pandemien_image {
+    position: absolute;
+    left: 50vw;
+    margin-top: 50px;
+}
+
+#pandemien_box {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background: url(images/purple_texture2.jpg);
+    background-size: 1000px;
+
+    margin-left: var(--side_margin);
+    margin-top: 100px;
+
+    border-radius: 600px;
+}
+
+#pandemien_text {
+    width: 550px;
+
+    padding: 30px;
+}
+
+
+
+/* KÜNSTLICHE INTELLIGENZ */
+
+#ki_image {
+    position: absolute;
+    right: 50vw;
+    margin-top: 50px;
+}
+
+#ki_box {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background: url(images/blue_texture.jpg);
+    background-size: 1500px;
+    right: var(--side_margin);
+    margin-top: 100px;
+    border-radius: 1000px;
+}
+
+#ki_text {
+    width: 600px;
+
+    padding: 30px;
+}
+
+
+
+/* KRIEG */
+
+#krieg_image {
+    position: absolute;
+    left: 55vw;
+    margin-top: 100px;
+}
+
+#krieg_box {
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    background: url(images/red_texture.jpg);
+    background-size: 1500px;
+    margin-top: 100px;
+    margin-left: var(--side_margin);
+    border-radius: 1000px;
+}
+
+#krieg_text {
+    width: 550px;
+    padding: 30px;
+}
+
+
+
+/* WIRTSCHAFTSKRISE */
+
+#wk_image {
+    position: absolute;
+    right: 55vw;
+    margin-top: 150px;
+}
+
+#wk_box {
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    background: url(images/green_texture.jpg);
+    background-size: 1400px;
+    right: var(--side_margin);
+    margin-top: 200px;
+    margin-bottom: 100px;
+    border-radius: 600px;
+}
+
+#wk_text {
+    width: 550px;
+
+    padding: 30px;
+}
+
+
+
+
+
+/* CONTENT PAGES */
+/* HEADLINE AND HEADLINE IMAGE */
+
+.headline_intro {
+    width: 100vw;
+
+    font-family: 'Bebas Neue';
+    position: absolute;
+    
+    font-size: 10vw;
+    color: var(--navbar-bg);
+    text-shadow: 3px 3px 6px rgb(255, 255, 255);
+
+    text-align: center;
+}
+
+.headline_div {
+    height: auto;
+    display: flex;
+    font-family: 'Bebas Neue';
+
+    text-align: center;
+
+
+
+}
+
+.headline_image {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+
+    margin-top: 50px;
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+
+
+}
+
+
+.hr_intro{
+    width: 60vw;
+    height: 2.5px;
+    margin-left: 20vw;
+
+    background-color: rgb(31, 31, 31);
+
+    border: none;
+
+}

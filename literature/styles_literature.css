@@ -1,0 +1,65 @@
+:root {
+--navbar-bg: rgb(31, 31, 31);    
+}
+
+
+
+.div_lit{
+    margin: 150px 25vw 100px 25vw;
+
+    padding: 50px;
+
+    width: 50vw;
+
+    background-color: var(--navbar-bg);
+
+    border-radius: 20px;
+}
+
+.headline_lit{
+    font-size: 55px;
+
+
+
+
+}
+
+/* HR */
+.hr_lit{
+    width: 42vw;
+    height: 1.5px;
+
+
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+}
+
+
+.subline_lit{
+    font-size: 40px;
+
+
+
+    font-family: 'Bebas Neue';
+
+    margin: 50px 0 20px 0;
+
+    color: rgb(255, 255, 255);
+
+}
+
+.text_lit{
+    font-size: 17px;
+
+    width: 40vw;
+
+    padding-bottom: 30px;
+
+    text-align: justify;
+
+    color: white;
+
+    line-height: 140%;
+
+}

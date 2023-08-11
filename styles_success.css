@@ -1,0 +1,22 @@
+.side_gray{
+    width: 20px;
+    background-color: rgb(143, 144, 144);
+    margin-right: 20px;
+}
+
+#flex_div_success{
+    width: 40vw;
+    margin: 0 30vw;
+}
+
+.text_side a{
+    font-family: 'Bebas Neue';
+
+    font-size: 25px;
+
+    color: rgb(134, 192, 134);
+}
+
+.zoom_div{
+    height: 200px;
+}

@@ -1,0 +1,382 @@
+.headline_image_solutions{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+    opacity: 0.7;
+
+}
+
+#headline_div_solutions{
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+
+/* SOLUTION MAIN PAGES */
+
+/* CLIMATE */
+
+
+
+#div_lokal_climate{
+
+    background: url(../images/yellow_texture.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+    margin: 0 5vw 0 27.5vw;
+}
+
+#div_global_climate{
+    background: url(../images/yellow_texture.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.a_lokglob{
+    color: inherit;
+}
+
+
+
+
+/* AI SOLUTIONS */
+.div_solutions{
+    width: 40vw;
+
+    margin: 0 30vw 0 30vw; 
+
+    background-color: rgb(230, 230, 230);
+
+    padding: 30px;
+
+    text-align: left;
+
+}
+
+.headline_solutions{
+    margin: 0 30vw 0 30vw;
+
+    font-size: 40px;
+
+}
+
+.text_solutions{ 
+    font-size: 16px;
+}
+
+.img_solutions{
+    width: 40vw;
+
+    margin: 0 30vw; 
+
+}
+
+#headline_basics{
+    font-size: 40px;
+}
+
+#lit_ai{
+    margin-bottom: 30px;
+}
+
+
+/* WAR SOLUTIONS MAIN */
+
+.div_solutions_main{
+    width: 60vw;
+
+    margin: 0 20vw 50px 20vw; 
+
+    background-color: rgb(230, 230, 230);
+
+    padding: 2vw;
+
+    text-align: left;
+
+
+}
+
+.text_war_solutions{
+    font-size: 16px;
+
+}
+
+.div_lokglob{
+    width: 20vw;
+
+    text-align: center;
+
+    font-size: 2vw;
+
+    font-family: 'Bebas Neue';
+
+    padding: 3vw 5vw;
+    
+
+    border-radius: 20px;
+
+}
+
+
+
+
+#div_lokal_war{
+
+    background: url(../images/red_texture.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+    margin: 0 5vw 0 27.5vw;
+}
+
+#div_global_war{
+    background: url(../images/red_texture.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+#flex_lokglo{
+    margin-bottom: 100px;
+}
+
+
+/* WAR LOCAL */
+
+.div_war_solutions{
+    width: 40vw;
+
+    margin: 0 30vw 0 30vw; 
+
+    background-color: rgb(230, 230, 230);
+
+    padding: 30px;
+
+    text-align: left;
+
+}
+
+#lit_war{
+    margin-top: none;
+}
+
+
+#headline_war{
+    margin-top: 80px;;
+}
+
+
+
+/* WAR GLOBAL */
+
+.subline_war{
+    font-size: 30px;
+
+    font-family: 'Bebas Neue';
+}
+
+
+
+
+
+
+/* IMAGE GALLERY */
+#round_flex {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+.round_headline {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    margin-top: 6.5vw;
+    font-size: 2.5vw;
+    background-color: var(--navbar-bg);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7px 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.round_image {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 1000px;
+    transition: opacity 0.5s;
+}
+
+.round_image:hover+.round_headline,
+.round_headline:hover {
+    opacity: 1;
+}
+
+
+.left_img {
+    margin-left: 20vw;
+}
+
+.left_text {
+    margin-left: 38vw;
+}
+
+.right_img {
+    right: 0px;
+    margin-right: 20vw;
+}
+
+.right_text {
+    right: 0px;
+    margin-right: 38vw;
+}
+
+/*  IMAGES  KLIMAWANDEL*/
+
+/*  IMAGES GLOBAL */
+
+/* MARINE CB */
+#clouds_image{
+    background: url(../content_pages_climate/images_climate/clouds.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* MARINE BIOMASS REGENERATION */
+  #biomass_image{
+    background: url(../content_pages_climate/images_climate/biomass.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  /* GREEN KEROSIN */
+  #kerosin_image{
+    background: url(../content_pages_climate/images_climate/kerosin.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* CO2 */
+  #co2_image{
+    background: url(../content_pages_climate/images_climate/co2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* PERMAFROST */
+  #perm_image{
+    background: url(../content_pages_climate/images_climate/perm.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* POWER TO X */
+  #p2x_image{
+    background: url(../content_pages_climate/images_climate/p2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+  
+
+/*  IMAGES LOCAL */
+
+/* MARINE CB */
+#alltag_image{
+    background: url(../content_pages_climate/images_climate/alltag_slim.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* MARINE BIOMASS REGENERATION */
+  #climate_image{
+    background: url(../content_pages_climate/images_climate/climate\ plants.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  /* GREEN KEROSIN */
+  #city_image{
+    background: url(../content_pages_climate/images_climate/city_slim.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* CO2 */
+  #moore_image{
+    background: url(../content_pages_climate/images_climate/moore.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+
+
+
+
+/* IMAGES PANDEMIC */
+
+#land_image{
+    background: url(../content_pages_pandemic/images_pandemic/Biodiversitätsverlust.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#wild_image{
+    background: url(../content_pages_pandemic/images_pandemic/wildtierhandel.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+#a_image {
+    background: url(../content_pages_climate/images_climate/energiewende.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#b_image {
+    background: url(images/blue_texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#c_image {
+    background: url(images/blue_texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#d_image {
+    background: url(images/blue_texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#e_image {
+    background: url(images/blue_texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#f_image {
+    background: url(images/blue_texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
